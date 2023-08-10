@@ -4,7 +4,7 @@ import React from 'react';
 const Hero = () => {
   return (
     <div>
-      <main className='flex top-2 relative justify-center'>
+      <main className='flex top-2 relative justify-center relative top-24'>
         <div className='flex flex-col space-y-16 max-w-2xl max-h-96'>
           <h1 className='flex text-5xl font-bold'>
             Find the perfect destination

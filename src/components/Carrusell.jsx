@@ -41,7 +41,7 @@ const Carrusell = ({ fotos }) => {
   
   return (
     <div>
-      <div className='flex justify-around items-center'>
+      <div className='flex justify-around items-center relative top-24'>
         <div>
           <img src={ Izquierda } className='w-16 cursor-pointer p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white' onClick={ manejarClickIzquierda }/>
         </div>
@@ -57,7 +57,7 @@ const Carrusell = ({ fotos }) => {
         </div>
       </div>
 
-      <div className='flex flex-wrap justify-center'>
+      <div className='flex flex-wrap justify-center relative top-24'>
         {
           diapositiva.map((f, i) => {
             if (i === index) return <span key={i} className='cursor-pointer'>🟣</span>

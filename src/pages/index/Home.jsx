@@ -1,7 +1,10 @@
 import React from 'react';
 import Hero from '../../components/Hero';
 import Carrusell from '../../components/Carrusell';
-import Nav from '../../layouts/Nav';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+
+
 
 const fotos = [
     'https://www.germany.travel/media/redaktion/staedte_kultur_content/Berlin_Brandenburger_Tor_im_Sonnenuntergang_Leitmotiv_German_Summer_Cities.jpg',
@@ -24,15 +27,10 @@ const fotos = [
 const Home = () => {
   return (
     <div className='max-h-max'>
-      {/* Header */}
-      <header className='flex justify-around h-16 items-center top-8 relative'>
-        <h2 className='w-48 h-11 font-bold text-3xl text-black'>
-          My Tinerary
-        </h2>
-      <Nav/>
-      </header>
+      <Header/>
       <Carrusell fotos={fotos}/>
       <Hero />
+      <Footer/>
     </div>
   )
 }
